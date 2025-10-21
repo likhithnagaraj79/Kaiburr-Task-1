@@ -1,10 +1,6 @@
 2Task Execution Manager
 ## Support_Snapshots - Supports for Configuration and installation.
 ## Test_Snapshots - Supports for Testing Edge Cases in Postman. (Tested with all edge cases)
-
-# Introduction:
-    A robust REST API built with Java Spring Boot that lets you easily create, manage, and execute shell command tasks in Kubernetes pods. It comes with task scheduling, execution history tracking, command validation, and strong security controls to ensure safe and reliable operation.
-
 ## Table of Contents
 
 * [Introduction](#introduction)
@@ -29,6 +25,8 @@
 
 ---
 
+# Introduction:
+    A robust REST API built with Java Spring Boot that lets you easily create, manage, and execute shell command tasks in Kubernetes pods. It comes with task scheduling, execution history tracking, command validation, and strong security controls to ensure safe and reliable operation.
 
 # Features:
     RESTful API for complete CRUD operations on tasks
