@@ -29,33 +29,8 @@
     MongoDB 7.0+
     Postman (for API testing)
 
-# Project Structure:
-task-api/
-├── pom.xml
-├── src/
-│   └── main/
-│       ├── java/
-│       │   └── com/
-│       │       └── kaiburr/
-│       │           └── taskapi/
-│       │               ├── TaskApiApplication.java
-│       │               ├── controller/
-│       │               │   └── TaskController.java
-│       │               ├── service/
-│       │               │   └── TaskService.java
-│       │               ├── repository/
-│       │               │   └── TaskRepository.java
-│       │               ├── model/
-│       │               │   ├── Task.java
-│       │               │   └── TaskExecution.java
-│       │               └── util/
-│       │                   └── CommandValidator.java
-│       └── resources/
-│           └── application.properties
-├── Support_Snapshots/
-│   └── (setup and installation images)
-└── Test_Snapshots/
-    └── (API testing screenshots)
+## Project Structure:
+task-api/ ├── pom.xml ├── src/ │ └── main/ │ ├── java/ │ │ └── com/ │ │ └── kaiburr/ │ │ └── taskapi/ │ │ ├── TaskApiApplication.java │ │ ├── controller/ │ │ │ └── TaskController.java │ │ ├── service/ │ │ │ └── TaskService.java │ │ ├── repository/ │ │ │ └── TaskRepository.java │ │ ├── model/ │ │ │ ├── Task.java │ │ │ └── TaskExecution.java │ │ └── util/ │ │ └── CommandValidator.java │ └── resources/ │ └── application.properties ├── Support_Snapshots/ │ └── (setup and installation images) └── Test_Snapshots/ └── (API testing screenshots)
 
 # Step 1: One-Time Setup
 #Open the terminal & Run this command to install Dependencies
