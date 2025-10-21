@@ -5,6 +5,30 @@
 # Introduction:
     A robust REST API built with Java Spring Boot that lets you easily create, manage, and execute shell command tasks in Kubernetes pods. It comes with task scheduling, execution history tracking, command validation, and strong security controls to ensure safe and reliable operation.
 
+# Table of Contents
+Section,Description
+Introduction,Overview of the REST API for shell command task management.
+Features,"Key capabilities, including CRUD, execution, history, and security."
+Technology Stack,List of technologies and tools used in the project.
+Prerequisites,Software requirements for setting up and running the application.
+Project Structure,Directory and file organization of the task-api project.
+
+Step 1: One-Time Setup,"Installation of Java 11, Maven, and MongoDB."
+STEP 2,Navigation into the project directory.
+STEP 3,Command to run the Spring Boot application.
+STEP 4,Starting and managing the MongoDB service.
+STEP 5,Download and installation of Postman for testing.
+DATA MODELS,Structure of the Task Object and TaskExecution Object.
+STEP 6,Setting up a new Postman Collection for API tests.
+
+TEST CASES,Detailed list of 20 Postman test cases covering all API endpoints and edge cases.
+Security Features,List of Dangerous Commands and Dangerous Patterns the command validator blocks.
+Troubleshooting,Solutions for common issues like MongoDB connection and port conflicts.
+Testing with cURL,Example commands for interacting with the API using cURL.
+Learning Outcomes,Key skills and principles gained from the project.
+License,Project license and purpose.
+Author,Author details with GitHub and LinkedIn links.
+Acknowledgments,People and entities acknowledged for their contribution.
 
 # Features:
     RESTful API for complete CRUD operations on tasks
