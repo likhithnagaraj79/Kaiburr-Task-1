@@ -31,7 +31,7 @@
 
 ## Project Structure:
 
-# ---
+***
 
 
 task-api/
@@ -60,7 +60,7 @@ task-api/
 │   └── (setup and installation images)
 └── Test_Snapshots/
     └── (API testing screenshots)
----
+***
 
 # Step 1: One-Time Setup
 #Open the terminal & Run this command to install Dependencies
