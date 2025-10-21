@@ -1,12 +1,12 @@
-Task Execution Manager
+2Task Execution Manager
 ## Support_Snapshots - Supports for Configuration and installation.
 ## Test_Snapshots - Supports for Testing Edge Cases in Postman. (Tested with all edge cases)
 
-Introduction:
+# Introduction:
     A robust REST API built with Java Spring Boot that lets you easily create, manage, and execute shell command tasks in Kubernetes pods. It comes with task scheduling, execution history tracking, command validation, and strong security controls to ensure safe and reliable operation.
 
----
-Features:
+
+# Features:
     RESTful API for complete CRUD operations on tasks
     Shell Command Execution with output capture and error handling
     Execution History Tracking - maintains complete history of all task executions
@@ -14,22 +14,22 @@ Features:
     MongoDB Integration - persistent storage of tasks and execution history
     Comprehensive Error Handling - proper HTTP status codes and error messages
     Edge Case Coverage - handles missing fields, invalid data, and non-existent resources
----
-Technology Stack:
+
+# Technology Stack:
     Java 11
     Spring Boot 2.7.14
     Spring Data MongoDB
     Maven - Build and dependency management
     MongoDB - NoSQL database
     Postman - API testing
----
-Prerequisites:
+
+# Prerequisites:
     Java 11 or higher
     Maven 3.6+
     MongoDB 7.0+
     Postman (for API testing)
----
-Project Structure:
+
+# Project Structure:
 task-api/
 ├── pom.xml
 ├── src/
@@ -56,27 +56,27 @@ task-api/
 │   └── (setup and installation images)
 └── Test_Snapshots/
     └── (API testing screenshots)
----
-Step 1: One-Time Setup
+
+# Step 1: One-Time Setup
 #Open the terminal & Run this command to install Dependencies
 
 brew install openjdk@11 maven mongodb-community@7.0
 
 ![One Time Setup](./Support_Snapshots/one_time_setup.jpeg)
----
-#STEP 2
+
+# STEP 2
 #After successful installation, navigate into project folder:
 
 cd task-api
----
-#STEP 3
+
+# STEP 3
 #Enter this command and click enter to run the application
 
 mvn spring-boot:run
 
 ![Success JVM Running Message](./Support_Snapshots/res.jpeg)
----
-#STEP 4
+
+# STEP 4
 #In the new terminal run this command and make sure MongoDB is running
 
 brew services start mongodb-community@7.0
@@ -87,16 +87,16 @@ brew services restart mongodb-community@7.0
 
 ![Restart MongoDB](./Support_Snapshots/mango.png)
 
----
+
 #ALL DONE
 #Your application should now be up and running successfully.
 #To Test Application
----
-#STEP 5
+
+# STEP 5
 #Download and install Postman from the official site:
 https://www.postman.com/downloads/ 
----
-DATA MODELS:
+
+# DATA MODELS:
 
         Task Object:
 
@@ -121,17 +121,17 @@ DATA MODELS:
                 "endTime": "2025-10-16T15:45:24.456Z",
                 "output": "Command output text"
                 }
----
-#STEP 6
+
+# STEP 6
 #Open Postman
 
 Create a new Collection:
     Click "Collections" in left sidebar
     Click "+" or "New Collection"
     Name it: "Kaiburr Task API Tests"
----
 
-TEST CASES:
+
+# TEST CASES:
 
     Test Case 1: Create Task - Print Hello
     Request:
@@ -353,8 +353,8 @@ Expected Response: 404 Not Found - Confirms the task was successfully deleted
 ![404 Not Found](./Test_Snapshots/Verify_Deletion.png)
 *****************************************************************
 
----
-Security Features:
+
+# Security Features:
     Dangerous Commands:
                 rm, rmdir, del - File deletion commands
                 sudo, su - Privilege escalation
@@ -384,8 +384,8 @@ Validation Examples:
             cat file > output.txt
             cd ../../../etc
 
----
-Troubleshooting:
+
+# Troubleshooting:
     MongoDB Connection Issues:
                         # Check if MongoDB is running
                         brew services list
@@ -413,8 +413,8 @@ Troubleshooting:
                         # Check MongoDB connection
                         mongosh
 
----
-Testing with cURL:
+
+# Testing with cURL:
             # Create a task
             curl -X PUT http://localhost:8080/tasks \
             -H "Content-Type: application/json" \
@@ -429,8 +429,8 @@ Testing with cURL:
             # Delete a task
             curl -X DELETE http://localhost:8080/tasks/1
 
----
-Learning Outcomes:
+
+# ₹ 567tyghb 9opl.Learning Outcomes:
     RESTful API design principles
     Spring Boot application development
     MongoDB integration with Spring Data
