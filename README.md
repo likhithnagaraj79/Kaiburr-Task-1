@@ -453,7 +453,7 @@ Validation Examples:
             curl -X DELETE http://localhost:8080/tasks/1
 
 
-# ₹ 567tyghb 9opl.Learning Outcomes:
+# Learning Outcomes:
     RESTful API design principles
     Spring Boot application development
     MongoDB integration with Spring Data
